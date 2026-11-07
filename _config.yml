@@ -1,0 +1,7 @@
+title: "Hannah Kim"
+description: "Bioinformatics, evolutionary genomics, and HCI"
+url: "https://hannahkimincompbio.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
