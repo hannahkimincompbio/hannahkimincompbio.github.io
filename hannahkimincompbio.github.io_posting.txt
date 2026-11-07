@@ -1,0 +1,104 @@
+Absolutely! You can add images, multiple images, diagrams, screenshots, figures, and even animated GIFs to your Jekyll blog posts.
+
+Since your blog is hosted on GitHub Pages, I'd recommend keeping images inside your repository rather than relying on external image-hosting services.
+
+### 1. Organize your images
+
+For example:
+
+```
+hannahkimincompbio.github.io/
+├── _posts/
+│   └── 2026-11-10-first-post.md
+├── assets/
+│   └── img/
+│       └── blog/
+│           ├── dissertation/
+│           │   ├── defense.jpg
+│           │   └── research-diagram.png
+│           └── conference/
+│               └── conference-photo.jpg
+```
+
+### 2. Insert an image into a Markdown post
+
+In `2026-11-10-first-post.md`:
+
+```
+---
+layout: post
+title: "My First Blog Post"
+date: 2026-11-10
+---
+
+# Welcome!
+
+Here is a snapshot from my dissertation defense.
+
+![Dissertation defense](/assets/img/blog/dissertation/defense.jpg)
+
+This was an exciting milestone in my research journey!
+```
+
+### 3. Control image size and alignment
+
+Markdown supports basic images, but HTML gives you more control:
+
+Centered image:
+
+```
+<div style="text-align: center;">
+  <img
+    src="/assets/img/blog/dissertation/defense.jpg"
+    alt="Dissertation defense"
+    style="width: 80%; max-width: 650px; height: auto;">
+</div>
+```
+
+Side-by-side images:
+
+```
+<div style="display: flex; gap: 15px; flex-wrap: wrap;">
+  <img src="/assets/img/blog/dissertation/defense.jpg"
+       alt="Defense"
+       style="width: 48%; height: auto;">
+
+  <img src="/assets/img/blog/dissertation/research-diagram.png"
+       alt="Research diagram"
+       style="width: 48%; height: auto;">
+</div>
+```
+
+### 4. Add captions
+
+For academic and research-oriented posts, captions are particularly useful:
+
+```
+<figure class="text-center my-4">
+  <img
+    src="/assets/img/blog/dissertation/research-diagram.png"
+    alt="Overview of the dissertation research"
+    style="width: 100%; max-width: 750px; height: auto;">
+
+  <figcaption class="text-muted mt-2">
+    Figure 1. Overview of the three research components of my dissertation.
+  </figcaption>
+</figure>
+```
+
+### 5. A few things worth knowing
+
+| Content           | Supported?      |
+| ----------------- | --------------- |
+| JPG / JPEG        | Yes             |
+| PNG               | Yes             |
+| SVG diagrams      | Yes             |
+| GIF animations    | Yes             |
+| WebP              | Yes             |
+| YouTube videos    | Yes, via iframe |
+| Multiple images   | Yes             |
+| Downloadable PDFs | Yes             |
+
+My recommendation: Keep the blog's images in `assets/img/blog/`, organize them into folders by post topic, and use HTML `<figure>` elements for research figures with captions.
+
+This will let you create posts that feel more like a research journal or technical blog while retaining the visual style of your existing personal website.
