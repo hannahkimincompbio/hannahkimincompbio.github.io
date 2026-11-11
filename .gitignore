@@ -25,3 +25,4 @@ hannahkimincompbio.github.io v1
 *.njsproj
 *.sln
 *.sw?
+no-track/*
