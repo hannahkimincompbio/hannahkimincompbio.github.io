@@ -10755,6 +10755,10 @@ section.resume-section .resume-section-content {
   }
 }
 
+.ink-label {
+  font-weight: bold;
+}
+
 .ink-story button {
   display: block;
   width: fit-content;
