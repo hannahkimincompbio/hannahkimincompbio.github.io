@@ -10758,27 +10758,27 @@ section.resume-section .resume-section-content {
 .ink-story button {
   display: block;
   width: fit-content;
+  max-width: 100%;
   margin: 0.65rem 0;
-  padding: 0.2rem 0;
+  padding: 0.55rem 0.9rem;
   background: transparent;
   color: #063365;
-  border: none;
-  border-bottom: 1px solid transparent;
-  border-radius: 0;
+  border: 1px solid #D8DCE2;
+  border-radius: 5px;
   font: inherit;
   font-size: 0.95rem;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .ink-story button:hover {
-  color: #E35559;
-  border-bottom-color: #E35559;
+  background: #F5F1E8;
+  border-color: #AAB8C8;
 }
 
 .ink-story button:focus-visible {
   outline: 2px solid #063365;
-  outline-offset: 4px;
+  outline-offset: 3px;
 }
