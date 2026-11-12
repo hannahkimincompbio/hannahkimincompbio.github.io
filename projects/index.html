@@ -1,8 +1,58 @@
+
 ---
-layout: default
+layout: null
 title: Projects
-permalink: /projects/
 ---
 
-<h1>Projects</h1>
-<p>A collection of games, interactive narratives, and computational projects.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects | Hannah Kim</title>
+
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet"
+        href="{{ '/css/styles.css' | relative_url }}">
+</head>
+
+<body>
+
+<div class="container mt-5 mb-5">
+
+  <a href="{{ '/' | relative_url }}">← Back to homepage</a>
+
+  <h1 class="mt-4 mb-3">Projects</h1>
+
+  <p class="mb-5">
+    A collection of games, interactive narratives,
+    and computational projects.
+  </p>
+
+  <h2>Games & Interactive Narratives</h2>
+
+  <div class="mb-5">
+    <h3>
+      <a href="{{ '/projects/no-name/' | relative_url }}">
+        No Name
+      </a>
+    </h3>
+
+    <p>
+      An experimental interactive narrative exploring
+      human interactions with conversational AI.
+    </p>
+
+    <a href="{{ '/projects/no-name/' | relative_url }}">
+      Play the game →
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
