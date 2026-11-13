@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>No Name</title>
-</head>
-<body>
-  <main>
-    <div id="story"></div>
-  </main>
+---
+layout: project
+title: No Name
+permalink: /projects/no-name/
+---
 
-  <script type="module" src="./player.js"></script>
-  {% include footer.html %}
-  
-</body>
-</html>
+<main>
+  <div id="story"></div>
+</main>
+
+<script type="module" src="{{ '/projects/no-name/player.js' | relative_url }}"></script>
