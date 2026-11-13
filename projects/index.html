@@ -48,11 +48,13 @@ permalink: /projects/
     </a>
   </h3>
 
-  {% if site.data.projects.no_name.date %}
+
+  {% if project.date %}
     <p class="text-muted">
-      {{ site.data.projects.no_name.date | date: "%B %-d, %Y" }}
+      {{ project.date | date: "%B %-d, %Y" }}
     </p>
   {% endif %}
+
   <p>
     An experimental interactive narrative exploring
     human interactions with conversational AI.
