@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} | Hannah Kim</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+</head>
+
+<body>
+  <div class="container mt-5 mb-5">
+
+        <nav class="mb-4">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span class="mx-2">·</span>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <span class="mx-2 text-muted">/</span>
+      <span>{{ page.title }}</span>
+    </nav>
+
+
+    <h1 class="mt-4">{{ page.title }}</h1>
+
+    {% if page.date %}
+      <p class="text-muted">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </p>
+    {% endif %}
+
+    <hr>
+
+    <article>
+      {{ content }}
+    </article>
+
+  </div>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

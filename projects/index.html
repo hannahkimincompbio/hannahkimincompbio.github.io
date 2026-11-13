@@ -24,7 +24,11 @@ permalink: /projects/
 
 <div class="container mt-5 mb-5">
 
-  <a href="{{ '/' | relative_url }}">← Back to homepage</a>
+  <nav class="mb-4">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span class="mx-2">·</span>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+  </nav>
 
   <h1 class="mt-4 mb-3">Projects</h1>
 
@@ -33,24 +37,39 @@ permalink: /projects/
     and computational projects.
   </p>
 
-  <h2>Games & Interactive Narratives</h2>
+  <h3>Games & Interactive Narratives</h3>
+
+  <!-- Project 1 -->
+
+  {% assign project = site.pages | where: "url", "/projects/no-name/" | first %}
 
   <div class="mb-5">
-    <h3>
-      <a href="{{ '/projects/no-name/' | relative_url }}">
-        No Name
-      </a>
-    </h3>
-
-    <p>
-      An experimental interactive narrative exploring
-      human interactions with conversational AI.
-    </p>
-
+  <h3>
     <a href="{{ '/projects/no-name/' | relative_url }}">
-      Play the game →
+      No Name
     </a>
+  </h3>
+
+
+  {% if project.date %}
+    <p class="text-muted">
+      {{ project.date | date: "%B %-d, %Y" }}
+    </p>
+  {% endif %}
+
+  <p>
+    An experimental interactive narrative exploring
+    human interactions with conversational AI.
+  </p>
+
+  <a href="{{ '/projects/no-name/' | relative_url }}">
+    Play the game →
+  </a>
   </div>
+
+  <!-- Project 2 -->
+
+  <!-- <h3>Computational Projects</h3> -->
 
 </div>
 
