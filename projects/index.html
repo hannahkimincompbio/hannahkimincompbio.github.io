@@ -41,6 +41,8 @@ permalink: /projects/
 
   <!-- Project 1 -->
 
+  {% assign project = site.pages | where: "url", "/projects/no-name/" | first %}
+
   <div class="mb-5">
   <h3>
     <a href="{{ '/projects/no-name/' | relative_url }}">
