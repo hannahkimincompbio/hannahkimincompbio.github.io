@@ -1,6 +1,7 @@
 ---
 layout: null
 title: Blog
+permalink: /blog/
 ---
 
 <!DOCTYPE html>
@@ -23,6 +24,10 @@ title: Blog
     <a href="{{ '/' | relative_url }}">← Back to homepage</a>
 
     <h1 class="mt-4 mb-5">Blog</h1>
+
+    {% if site.posts.size == 0 %}
+    <p>No blog posts yet. Check back soon!</p>
+    {% endif %}
 
     {% for post in site.posts %}
 
@@ -47,6 +52,7 @@ title: Blog
     {% endfor %}
 
   </div>
-</body>
 
+  {% include footer.html %}
+</body>
 </html>
