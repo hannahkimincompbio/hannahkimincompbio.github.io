@@ -37,24 +37,31 @@ permalink: /projects/
     and computational projects.
   </p>
 
-  <h2>Games & Interactive Narratives</h2>
+  <h3>Games & Interactive Narratives</h3>
+
+  <!-- Project 1 -->
 
   <div class="mb-5">
-    <h3>
-      <a href="{{ '/projects/no-name/' | relative_url }}">
-        No Name
-      </a>
-    </h3>
-
-    <p>
-      An experimental interactive narrative exploring
-      human interactions with conversational AI.
-    </p>
-
+  <h3>
     <a href="{{ '/projects/no-name/' | relative_url }}">
-      Play the game →
+      No Name
     </a>
-  </div>
+  </h3>
+
+  {% if site.data.projects.no_name.date %}
+    <p class="text-muted">
+      {{ site.data.projects.no_name.date | date: "%B %-d, %Y" }}
+    </p>
+  {% endif %}
+  <p>
+    An experimental interactive narrative exploring
+    human interactions with conversational AI.
+  </p>
+
+  <a href="{{ '/projects/no-name/' | relative_url }}">
+    Play the game →
+  </a>
+</div>
 
 </div>
 
