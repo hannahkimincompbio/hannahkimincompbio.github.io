@@ -19,4 +19,4 @@ I also realized that my own bloated expectation on AI this week. It did magic on
 
 ### Reference
 
-<a id="#ref-1"></a> Kim, H. (2026). _Expect the Unexpected Bioinformatics AI Agent Skills (2026-11-16)._ GitHub. https://github.com/hannahkimincompbio/Expect-the-Unexpected-Bioinformatics-AI-Agent-Skills
+<a id="#ref-1"></a>[1] Kim, H. (2026). _Expect the Unexpected Bioinformatics AI Agent Skills (2026-11-16)._ GitHub. https://github.com/hannahkimincompbio/Expect-the-Unexpected-Bioinformatics-AI-Agent-Skills
