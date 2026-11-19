@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Expect the Unexpected, AI Agents.md"
+date: 2026-11-18
+tags: [Research, Personal]
+---
+
+To expect the unexpected is to be ready for sudden changes or events. I thought large language models could be helpful handling some common issues in bioinformatics research, but using the models themselves also came with its own set of unexpectedness, both desirable and undesirable! I guess it is good that I am learning this through experience now.
+
+I have joined the fervor of AI agent adopters in the past couple of weeks to have the lived experience. Notably, I have been digging into how AI agents could be used in biological research. AI agents can improve the quality of research experience and thereby improving resulting work. For example, many bioinformatics tools have version control issues where versions are ill-documented. One generally has to go through many iterations of fixes before the tools can be run. The bioinformatics community has been trying to address these challenges by promoting the use of environments and containers, but the issues persist. Because AI agents are good at coding and scanning a huge amount of text, they can help identifying the potential version incompatibilities in codes early in the project, before days have been spent on running a tool. I have recently used an AI agent to write an agent skill "cli-diff-version" that exactly addresses that. 
+
+Another AI skill that I am working on is called "whats new tool tracker". This skill should be useful to understand what was going on with a tool. This is different from "cli-diff-version" in the sense that it tries to address not only updates in the new code release but also what has been happening with the authors and the community [[1]](#ref-1).
+
+The unexpected AI agent mistake I thought made with "whats new tool tracker" was that I asked the AI agent to do literature review and interpreted the inconsistencies returning 404 as potentially problematic access by the AI. In reality, it turned out not to be problematic access, and the 404 was a separate issue. The AI agent likely already had a list of free academic APIs. I know, I know, these days, describing the expected output to the AI returns better results than human delineating steps to it, because AI has been trained with the almost entirety of human knowledge. However, the fact that many websites are not prepared for machines viewing their pages remains true, too. This was a good experience for me to think about my role, values, and pet-peeves in the interaction with the AI agent. While I marbled at the agent's capability, I did not like the fact that the code ran invisibly. There must be an internally written code snippet to make API calls on its own?
+
+Another thing I noticed was that the underlying model mattered. This must be an odd thing to notice at this moment in time after being awed by the rapid AI capability advancements over the summer. What I am noticing is that skills that work with one model do not work well with another model. My AI agent/harness (Hermes) is dynamically patching its default skills, so the output comparison is not exactly apples to apples; however, different models seem to provide different level of cushions and deviations when provided the same SKILL.md (and its accompanying scripts). The model behavior was implicitly dependent on each model. That seems to necessitate (A) the user to adhere to one model most of the times for consistency or (B) ditch reliance on skills all at once in favor of the strongest model at the time. I would like to build an open source bioinformatics AI tool eventually, but how does one give certainty about the basic performance of a tool in this environment? "Use a better model" does not seem like a reliable answer.
+
+I also realized that my own bloated expectation on AI this week. It did magic on a lot of scripting/writing tasks, so I began giving it bigger chunks of work and some of them ended up being unsuccessful. Should I have given the AI agent more context? Should I have compressed the session for it to not generate nonsense? As much as it generates clean outputs, I remained responsible to be aware of the details, nooks and cracks. It was still a useful experience to learn where the line is.
+
+### Reference
+
+<a id="#ref-1"></a> Kim, H. (2026). _Expect the Unexpected Bioinformatics AI Agent Skills (2026-11-16)._ GitHub. https://github.com/hannahkimincompbio/Expect-the-Unexpected-Bioinformatics-AI-Agent-Skills
