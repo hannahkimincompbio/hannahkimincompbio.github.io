@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Expect the Unexpected, AI Agents.md"
+title: "Expect the Unexpected, AI Agents."
 date: 2026-11-18
 tags: [Research, Personal]
 ---
